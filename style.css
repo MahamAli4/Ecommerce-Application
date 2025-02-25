@@ -1,0 +1,337 @@
+
+*{
+    box-sizing: border-box;
+}
+.text-primary{
+    color: #ff4d4d !important;
+}
+
+.product-card {
+    height: 450px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px grey;
+    transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.product-img {
+    width: 100%;
+    height: 300px !important;
+    /* background-color: #d9534f; */
+    box-sizing: border-box;
+    position: relative;
+}
+.product-img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.product-card:hover .product-img img {
+    transform: scale(1.1);
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.icons a {
+    background: rgb(214, 211, 211);
+    color: black;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 3px;
+    display: inline-block;
+}
+.icons a:hover{
+    background-color: #ff4d4d;
+    color: aliceblue;
+}
+
+.button-styling{
+    width: 244px;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: #ff4d4d;
+}
+.button-styling:hover{
+    background-color: transparent;
+    border: 1px solid black !important;
+    color: black;
+}
+
+
+/* <!-- ==============Browse By Category Phones============================= --> */
+
+
+.category-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+.category-card:hover {
+    transform: scale(1.05);
+    background-color: #d9534f;
+    color: #ddd;
+}
+.category-card.selected {
+    background-color: #d9534f;
+    color: white;
+}
+.category-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.button-designing{
+   background-color: #d9534f;
+   border: 1px solid #d9534f;
+}
+.button-designing:hover{
+   background-color: #eee3e3;
+   border: 1px solid #d9534f;
+   color: black !important;
+}
+
+
+
+.hero {
+    background: black;
+    color: white;
+    padding: 50px 0;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.hero-text .countdown {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+.countdown div {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 60px;
+    margin-bottom: 30px;
+}
+.hero-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transform: scale(1.0);
+    transition: 0.3s ease;
+}
+.hero-btn:hover{
+    transform: scale(1.2) !important;
+}
+.hero-img {
+    flex: 1;
+    text-align: center;
+}
+.hero-img img {
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+}
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.arrival-section {
+    padding: 50px 0;
+}
+.arrival-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.arrival-card img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.arrival-card:hover img {
+    transform: scale(1.05);
+}
+.arrival-text {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+}
+.arrival-text h5 {
+    font-weight: bold;
+}
+.shop-btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.feature-card:hover {
+    transform: scale(1.05);
+}
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    margin: 0 auto 15px;
+}
+
+
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer input {
+    background: #333;
+    border: none;
+    padding: 8px;
+    color: white;
+    width: 80%;
+}
+.footer .social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+.signup-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.form-container {
+    padding: 50px;
+}
+.form-control {
+    background: #f8f9fa;
+    border: none;
+    padding: 12px;
+}
+.btn-google {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-google img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+.cart-table img {
+    width: 50px;
+}
+.cart-total {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+.btn-danger {
+    background: #dc3545;
+    border: none;
+}
+.btn-danger:hover {
+    background: #c82333;
+}
+
+
+
+
+
+
+
+.stat-card {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.stat-card i {
+    font-size: 40px;
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.stat-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.stat-card p {
+    color: #666;
+    font-size: 14px;
+}
+.stat-card:hover {
+    background-color: #dc3545;
+    color: white;
+    transform: scale(1.05);
+}
+.stat-card:hover i {
+    background: white;
+    color: black;
+}
